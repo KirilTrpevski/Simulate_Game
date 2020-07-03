@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
             this.btnRed3 = new System.Windows.Forms.Button();
             this.btnGreen4 = new System.Windows.Forms.Button();
             this.btnBlue2 = new System.Windows.Forms.Button();
@@ -152,7 +151,7 @@
 
         #endregion
 
-<<<<<<< HEAD
+
         private System.Windows.Forms.Button btnRed3;
         private System.Windows.Forms.Button btnGreen4;
         private System.Windows.Forms.Button btnBlue2;
