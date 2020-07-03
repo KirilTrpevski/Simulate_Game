@@ -16,6 +16,10 @@ namespace Simulate_Game
         public Form1()
         {
             InitializeComponent();
+            button1.BackColor = Color.Red;
+            button2.BackColor = Color.Green;
+            button3.BackColor = Color.Blue;
+            button4.BackColor = Color.Yellow;
         }
         String[] btns = { "btnOrange1", "btnBlue2", "btnRed3", "btnGreen4" };
         List<string> seq = new List<string>();
