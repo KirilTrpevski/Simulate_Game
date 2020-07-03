@@ -15,6 +15,10 @@ namespace Simulate_Game
         public Form1()
         {
             InitializeComponent();
+            button1.BackColor = Color.Red;
+            button2.BackColor = Color.Green;
+            button3.BackColor = Color.Blue;
+            button4.BackColor = Color.Yellow;
         }
     }
 }
