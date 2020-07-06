@@ -121,6 +121,7 @@ namespace Simulate_Game
                         if (result == DialogResult.OK)
                         {
                             score = 0;
+                            Poeni.Text = String.Format("Поени: 0");
                         }
                         break;
                     }
@@ -167,6 +168,7 @@ namespace Simulate_Game
                         if (result == DialogResult.OK)
                         {
                             score = 0;
+                            Poeni.Text = String.Format("Поени: 0");
                         }
                         break;
                     }
@@ -213,6 +215,7 @@ namespace Simulate_Game
                         if (result == DialogResult.OK)
                         {
                             score = 0;
+                            Poeni.Text = String.Format("Поени: 0");
                         }
                         break;
                     }
@@ -316,6 +319,7 @@ namespace Simulate_Game
             {
                 timer1.Stop();
                 MessageBox.Show("Game over");
+                Poeni.Text = String.Format("Поени: 0");
                 score = 0;
             }
             if (time <= 5)
