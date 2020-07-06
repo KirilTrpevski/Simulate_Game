@@ -16,3 +16,23 @@
 #
 
 ![image](https://user-images.githubusercontent.com/63514637/86619458-e2e98b00-bfba-11ea-9ca3-51860d4dfb23.png)
+
+### Функцијата shuffleButtons() која со секој повик ја разместува листата на копчиња за редоследот на светкање да биде различен.
+
+```c#
+  private void shuffleButtons()
+        {
+            List<int> randomNumbers = new List<int>();
+
+            for (int i = 0; i < level; i++)
+            {
+                randomNumbers.Add(random.Next(0, 4));
+            }
+            List<Button> a = new List<Button>();
+            foreach (int item in randomNumbers)
+            {
+                a.Add(btns[item]);
+            }
+            pom = btns;
+            btns = a;
+        }
