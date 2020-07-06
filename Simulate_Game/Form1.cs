@@ -108,7 +108,7 @@ namespace Simulate_Game
                         {
                             level = 4;
                             score = 0;
-                            //Poeni.Text = String.Format("Поени: 0");
+                            Poeni.Text = String.Format("Поени: 0");
                         }
                         break;
                     }
@@ -117,7 +117,11 @@ namespace Simulate_Game
                         timer1.Stop();
                         time = 12;
                         level = 4;
-                        MessageBox.Show("Game over");
+                        DialogResult result = MessageBox.Show("Game over", "Играта заврши", MessageBoxButtons.OK);
+                        if (result == DialogResult.OK)
+                        {
+                            score = 0;
+                        }
                         break;
                     }
                 }
@@ -150,7 +154,7 @@ namespace Simulate_Game
                         {
                             level = 4;
                             score = 0;
-                            //Poeni.Text = String.Format("Поени: 0");
+                            Poeni.Text = String.Format("Поени: 0");
                         }
                         break;
                     }
@@ -159,7 +163,11 @@ namespace Simulate_Game
                         timer1.Stop();
                         time = 12;
                         level = 4;
-                        MessageBox.Show("Game over");
+                        DialogResult result = MessageBox.Show("Game over", "Играта заврши", MessageBoxButtons.OK);
+                        if (result == DialogResult.OK)
+                        {
+                            score = 0;
+                        }
                         break;
                     }
                 }
@@ -201,7 +209,11 @@ namespace Simulate_Game
                         timer1.Stop();
                         time = 12;
                         level = 4;
-                        MessageBox.Show("Game over");
+                        DialogResult result = MessageBox.Show("Game over", "Играта заврши", MessageBoxButtons.OK);
+                        if (result == DialogResult.OK)
+                        {
+                            score = 0;
+                        }
                         break;
                     }
                 }
@@ -244,6 +256,10 @@ namespace Simulate_Game
                         time = 12;
                         level = 4;
                         DialogResult result = MessageBox.Show("Game over", "Играта заврши", MessageBoxButtons.OK);
+                        if(result == DialogResult.OK)
+                        {
+                            score = 0;
+                        }
                         break;
                     }
                 }
@@ -253,7 +269,6 @@ namespace Simulate_Game
         }
         private void shuffleButtons()
         {
-
             List<int> randomNumbers = new List<int>();
 
             for (int i = 0; i < level; i++)
@@ -271,6 +286,10 @@ namespace Simulate_Game
 
         private async void startTimer_Click(object sender, EventArgs e)
         {
+            btn1.Enabled = true;
+            btn2.Enabled = true;
+            btn3.Enabled = true;
+            btn4.Enabled = true;
             realSeq.Clear();
             checkSeq.Clear();
             counter = 1;
@@ -293,14 +312,11 @@ namespace Simulate_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            btn1.Enabled = true;
-            btn2.Enabled = true;
-            btn3.Enabled = true;
-            btn4.Enabled = true;
             if (time <= 0)
             {
                 timer1.Stop();
                 MessageBox.Show("Game over");
+                score = 0;
             }
             if (time <= 5)
             {
