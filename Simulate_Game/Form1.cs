@@ -44,6 +44,12 @@ namespace Simulate_Game
             btn4.Width = 180;
             btn4.BackColor = Color.Green;
             btn4.Click += new EventHandler(btn4_Click);
+
+            btn1.Enabled = false;
+            btn2.Enabled = false;
+            btn3.Enabled = false;
+            btn4.Enabled = false;
+
             Controls.Add(btn1);
             Controls.Add(btn2);
             Controls.Add(btn3);
@@ -287,6 +293,10 @@ namespace Simulate_Game
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            btn1.Enabled = true;
+            btn2.Enabled = true;
+            btn3.Enabled = true;
+            btn4.Enabled = true;
             if (time <= 0)
             {
                 timer1.Stop();
