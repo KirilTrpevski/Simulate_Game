@@ -3,16 +3,16 @@
 играчот треба да ги исклика квадратчињата по истиот редослед по кој тие трепкале, со секое наредно ниво секвенцата за погодување се зголемува за еден што ја прави играта се потешка, згора на тоа има и тајмер
 кој почнува од 12 секунди и со секоја погодена секвенца се додаваат по 4 секунди, исто така со секоја погодена секвенца играчот добива по 5 поени. Играта завршува ако времето истече или доколку играчот не ја погоди
 секвенцата.
-![slika1](https://user-images.githubusercontent.com/63514637/86593529-b3745780-bf95-11ea-8c72-d578fec2c852.png)
+![image](https://user-images.githubusercontent.com/63514637/86619212-78d0e600-bfba-11ea-8040-09857dae67b5.png)
 
 Подоле на сликата е прикажано како трепкаат копчињата.
 
-![image](https://user-images.githubusercontent.com/63514637/86593668-ecacc780-bf95-11ea-857d-324abb93aa3f.png)
+![image](https://user-images.githubusercontent.com/63514637/86619332-a453d080-bfba-11ea-9004-99672d31c558.png)
 
 Овде се прикажани MessageBoxes за Game over или за продолжување на следното ниво.
 
-![image](https://user-images.githubusercontent.com/63514637/86593887-588f3000-bf96-11ea-84b8-c8d2b268c281.png)
+![image](https://user-images.githubusercontent.com/63514637/86619403-c9e0da00-bfba-11ea-9c6c-6b036683233f.png)
 
 #
 
-![image](https://user-images.githubusercontent.com/63514637/86593964-7eb4d000-bf96-11ea-90e7-808bfff5ce54.png)
+![image](https://user-images.githubusercontent.com/63514637/86619458-e2e98b00-bfba-11ea-9ca3-51860d4dfb23.png)
