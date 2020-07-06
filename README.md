@@ -4,3 +4,15 @@
 кој почнува од 12 секунди и со секоја погодена секвенца се додаваат по 4 секунди, исто така со секоја погодена секвенца играчот добива по 5 поени. Играта завршува ако времето истече или доколку играчот не ја погоди
 секвенцата.
 ![slika1](https://user-images.githubusercontent.com/63514637/86593529-b3745780-bf95-11ea-8c72-d578fec2c852.png)
+
+Подоле на сликата е прикажано како трепкаат копчињата.
+
+![image](https://user-images.githubusercontent.com/63514637/86593668-ecacc780-bf95-11ea-857d-324abb93aa3f.png)
+
+Овде се прикажани MessageBoxes за Game over или за продолжување на следното ниво.
+
+![image](https://user-images.githubusercontent.com/63514637/86593887-588f3000-bf96-11ea-84b8-c8d2b268c281.png)
+
+#
+
+![image](https://user-images.githubusercontent.com/63514637/86593964-7eb4d000-bf96-11ea-90e7-808bfff5ce54.png)
