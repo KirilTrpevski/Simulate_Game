@@ -1,6 +1,6 @@
 ﻿namespace Simulate_Game
 {
-    partial class Form1
+    partial class timerLabel
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,8 @@
             this.startTimer = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerResult = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.Poeni = new System.Windows.Forms.Label();
+            this.timeElapsed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBox1
@@ -49,7 +49,8 @@
             // 
             // startTimer
             // 
-            this.startTimer.Location = new System.Drawing.Point(746, 50);
+            this.startTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startTimer.Location = new System.Drawing.Point(723, 250);
             this.startTimer.Name = "startTimer";
             this.startTimer.Size = new System.Drawing.Size(175, 45);
             this.startTimer.TabIndex = 7;
@@ -60,6 +61,7 @@
             // timer1
             // 
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // timerResult
             // 
@@ -69,16 +71,36 @@
             this.timerResult.Size = new System.Drawing.Size(0, 13);
             this.timerResult.TabIndex = 8;
             // 
-            // Form1
+            // Poeni
+            // 
+            this.Poeni.AutoSize = true;
+            this.Poeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Poeni.Location = new System.Drawing.Point(723, 82);
+            this.Poeni.Name = "Poeni";
+            this.Poeni.Size = new System.Drawing.Size(149, 37);
+            this.Poeni.TabIndex = 9;
+            this.Poeni.Text = "Поени: 0";
+            // 
+            // timeElapsed
+            // 
+            this.timeElapsed.AutoSize = true;
+            this.timeElapsed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeElapsed.Location = new System.Drawing.Point(864, 9);
+            this.timeElapsed.Name = "timeElapsed";
+            this.timeElapsed.Size = new System.Drawing.Size(0, 20);
+            this.timeElapsed.TabIndex = 10;
+            // 
+            // timerLabel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(933, 476);
+            this.Controls.Add(this.timeElapsed);
+            this.Controls.Add(this.Poeni);
             this.Controls.Add(this.timerResult);
             this.Controls.Add(this.startTimer);
             this.Controls.Add(this.listBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "timerLabel";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,8 +111,8 @@
         private System.Windows.Forms.Button startTimer;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label timerResult;
-        private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Label Poeni;
+        private System.Windows.Forms.Label timeElapsed;
     }
 }
 
